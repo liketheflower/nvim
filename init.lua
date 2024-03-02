@@ -822,7 +822,13 @@ require("lazy").setup({
 	-- Following lines are added by jimmy
 	{ import = "custom.plugins.copilot" },
 	{ import = "custom.plugins.nvim-tree" },
+	{ import = "custom.plugins.lspsaga" },
 })
 
+-- added by jimmy for tab management
+vim.o.tabstop = 4 -- A TAB character looks like 4 spaces
+vim.o.expandtab = true -- Pressing the TAB key will insert spaces instead of a TAB character
+vim.o.softtabstop = 4 -- Number of spaces inserted instead of a TAB character
+vim.o.shiftwidth = 4 -- Number of spaces inserted when indenting
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
